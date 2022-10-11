@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+}
+.board *{
+    border: 0.1rem solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.my-catagory-title{
+    background-color: purple;
+    grid-row-start: 1;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.my-catagory-clue{
+    font-size: 2rem;
+}
